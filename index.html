@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evolvo – AI Migration Pre-Qualification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+
+      <div class="logo-box">
+        <img src="evolvo-logo.png" class="logo-img" alt="Evolvo Logo" />
+        <div class="logo-text">
+          <span class="name">EVOLVO</span>
+          <span class="tagline">AI Template Migration Studio</span>
+        </div>
+      </div>
+
+      <!-- Soft box for the header button -->
+      <div class="soft-box header-button-box">
+        <a href="https://evolvo.ca" target="_blank" class="header-link">VISIT EVOLVO.CA</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- SECTION 1 — WHO WE ARE -->
+    <section class="section reveal">
+      <div class="section-wrap">
+
+        <div class="text-col soft-box">
+          <h2>Who We Are</h2>
+
+          <p class="lead">
+            Evolvo is an AI Template Migration Studio dedicated to transforming prototypes,
+            templates, and experimental builds into stable, production-ready applications.
+          </p>
+
+          <p>
+            We bridge the gap between early-stage AI experimentation and market-ready execution.
+            Our team improves codebases, refines UX flows, and designs architectures engineered
+            for long-term reliability and growth.
+          </p>
+
+          <ul class="points">
+            <li>Refactors prototype-level code into production-grade systems.</li>
+            <li>Designs clean, modern UI/UX that enhance user experience.</li>
+            <li>Implements scalable, secure infrastructure ready for real usage.</li>
+          </ul>
+        </div>
+
+        <div class="img-col">
+          <video class="section-video" autoplay muted loop playsinline preload="auto">
+            <source src="who-we-are.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2 — HOW WE HELP YOU -->
+    <section class="section alt reveal">
+      <div class="section-wrap">
+
+        <div class="text-col soft-box">
+          <h2>How We Can Help You</h2>
+
+          <p class="lead">
+            Evolvo upgrades your AI template, prototype, or MVP into a fully scalable product
+            ready for real customers, investors, and market traction.
+          </p>
+
+          <ul class="points">
+            <li>Transform template codebases into maintainable structures.</li>
+            <li>Create purpose-built UI/UX for your exact use-case.</li>
+            <li>Set up backend foundations, observability, logs, and security.</li>
+            <li>Assist with launch, deployment, and long-term maintainability.</li>
+          </ul>
+        </div>
+
+        <div class="img-col">
+          <video class="section-video" autoplay muted loop playsinline preload="auto">
+            <source src="how-we-help.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3 — FORM -->
+    <section class="section reveal">
+      <div class="form-section soft-box">
+
+        <h2>Share Your Project (30 seconds)</h2>
+        <p class="form-desc">
+          Your answers will automatically be added to a WhatsApp message for quick review.
+        </p>
+
+        <form id="qualifyForm">
+
+          <!-- Q1 -->
+          <div class="field-group">
+            <label>Stage of your project <span>*</span></label>
+            <div class="options" data-field="stage">
+              <button type="button" class="opt" data-value="Prototype ready">Prototype ready</button>
+              <button type="button" class="opt" data-value="In development">In development</button>
+              <button type="button" class="opt" data-value="Idea stage">Idea stage</button>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="field-group">
+            <label>What do you need help with? <span>*</span></label>
+            <div class="options" data-field="need">
+              <button type="button" class="opt" data-value="Migrate an AI template">Migrate an AI template</button>
+              <button type="button" class="opt" data-value="Redesign UX & structure">Redesign UX & structure</button>
+              <button type="button" class="opt" data-value="Build full product from prototype">Build full product</button>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="field-group">
+            <label>Timeline <span>*</span></label>
+            <select id="timelineSelect">
+              <option value="">Choose one…</option>
+              <option value="0–4 weeks">0–4 weeks</option>
+              <option value="1–3 months">1–3 months</option>
+              <option value="3–6+ months">3–6+ months</option>
+            </select>
+          </div>
+
+          <!-- Q4 -->
+          <div class="field-group">
+            <label>Extra details (optional)</label>
+            <textarea id="notesInput" placeholder="Tech stack, links, context…"></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" id="seriousCheckbox" />
+            <span>This is a real project and I'm open to a real conversation.</span>
+          </label>
+
+          <p id="helperText" class="helper-text">Please complete all required fields.</p>
+
+          <a id="whatsappLink"
+             class="btn whatsapp-btn disabled"
+             href="#"
+             data-base-url="https://wa.me/YOUR_WHATSAPP_NUMBER"
+             target="_blank">
+            Send & Connect on WhatsApp
+          </a>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Evolvo
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
